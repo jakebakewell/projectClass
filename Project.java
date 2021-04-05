@@ -29,7 +29,9 @@ class Project {
     public int getInitialCost() {
         return this.initialCost;
     }
-    public void elevatorPitch() {
+    public String elevatorPitch() {
         System.out.println(this.name + " ($" + this.initialCost + "): " + this.description);
+        String pitch = String.format("%s ($%o): %s", this.name, this.initialCost, this.description);
+        return pitch;
 }
 }
